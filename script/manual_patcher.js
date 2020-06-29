@@ -123,4 +123,5 @@
     Array.from(document.getElementsByClassName('localized')).forEach(element => {
         element.innerHTML = _(element.innerHTML);
     });
+    document.querySelector('footer > a').href = _('README.md');
 })();

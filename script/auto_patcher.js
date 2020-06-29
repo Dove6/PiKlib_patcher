@@ -247,6 +247,7 @@
         ${_('Desired patches (optional)')}: `;
     document.getElementById('mail_notify').href =
         `mailto:${mail_address}?subject=${encodeURIComponent(mail_subject)}&body=${encodeURIComponent(mail_body)}`;
+    document.querySelector('footer > a').href = _('README.md');
 
     document.querySelector('label[for="file_input"]').addEventListener('keydown', event => {
         if (event.key === 'Enter') {
