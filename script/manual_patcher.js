@@ -16,11 +16,17 @@
             game_title.id = `game${game['id']}`;
             game_title.className = 'game_title';
             game_title.innerHTML = game['name'];
-            game_title.addEventListener('click', (event) => {
+            game_title.tabIndex = 0;
+            game_title.addEventListener('click', event => {
                 if (event.target.classList.contains('open')) {
                     event.target.classList.remove('open');
                 } else {
                     event.target.classList.add('open');
+                }
+            });
+            game_title.addEventListener('keyup', event => {
+                if (event.key === ' ' || event.key === 'Spacebar') {
+                    event.target.click();
                 }
             });
             let library_container = document.createElement('div');

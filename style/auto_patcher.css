@@ -1,0 +1,69 @@
+#patch_screen, #file_input {
+    display: none;
+}
+
+#file_screen.drag {
+    background: #f0feff;
+}
+
+#file_icon {
+    height: 40vh;
+    margin: 1em;
+}
+
+label {
+    cursor: pointer;
+}
+
+label[for="file_input"] {
+    display: block;
+    border: 1px solid dodgerblue;
+    background: aliceblue;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+label[for="file_input"]:focus {
+    outline-color: black;
+    outline-style: solid;
+    outline-offset: 1px;
+}
+
+#patch_window, #error_window {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+#patch_window > p:first-child {
+    margin-top: 0;
+}
+
+#patch_title {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#patch_checkbox_container {
+    min-height: 6em;
+    max-height: 40vh;
+    overflow-y: scroll;
+    padding: 0.5em 0;
+    margin: 0 0.5em;
+}
+
+#patch_checkbox_container > label {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 25em;
+    padding-right: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.checkbox_title {
+    text-decoration: underline;
+}
+
+#patch_button {
+    border: 1px solid forestgreen;
+    background: lightgreen;
+}
