@@ -123,5 +123,5 @@
     Array.from(document.getElementsByClassName('localized')).forEach(element => {
         element.innerHTML = _(element.innerHTML);
     });
-    document.querySelector('footer > a').href = _('README.md');
+    document.querySelector('footer > a').href = `https://github.com/Dove6/PiKlib_patcher/blob/master/${_('README.md')}`;
 })();

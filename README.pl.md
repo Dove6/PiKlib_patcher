@@ -5,8 +5,7 @@ Uniwersalny patcher DLL służący do aktywacji ukrytych funkcji bibliotek PiKli
 
 ### Wypróbuj!
 Najwygodniej użyć [wersji online](https://dove6.github.io/projects/PiKlib_patcher/).  
-Możliwe jest również lokalne uruchomienie aplikacji (poprzez serwer WWW), jednakże do pobrania bazy danych łatek przechowywanej w Arkuszach Google wymagane jest połączenie internetowe:  
-[releases](https://github.com/Dove6/dePIKczer/releases)
+Możliwe jest również [lokalne](https://github.com/Dove6/PiKlib_patcher/releases) uruchomienie aplikacji (poprzez serwer WWW), jednakże do pobrania bazy danych łatek przechowywanej w Arkuszach Google wymagane jest połączenie internetowe.
 
 ### Jak to działa
 1. Wgrany plik biblioteki jest rozpoznawany na podstawie jego sumy kontrolnej.

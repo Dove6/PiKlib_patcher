@@ -5,8 +5,7 @@ Universal DLL patcher for unlocking hidden features of PiKlib and BlooMoo librar
 
 ### Try it!
 The most conveniet way is to use [online version](https://dove6.github.io/projects/PiKlib_patcher/).  
-Also, the software can be run locally (using a web server), but an Internet connection is required for fetching patch data stored using Google Sheets:  
-[releases](https://github.com/Dove6/dePIKczer/releases)
+Also, the software can be run [locally](https://github.com/Dove6/PiKlib_patcher/releases) (using a web server), but an Internet connection is required for fetching patch data stored using Google Sheets.
 
 ### How it works
 1. The "uploaded" library file is recognized basing on its checksum.
