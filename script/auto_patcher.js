@@ -17,28 +17,32 @@
     */
     function processInputFile(event) {
         let input_file = null;
-        if (event.type == 'change') {
-            if (this.files.length == 0) {
+        if (event.type === 'change') {
+            if (event.target.files.length > 0) {
+                input_file = event.target.files[0];
+            } else {
                 if (debug) {
                     console.log('No input files selected!');
                 }
-                return;
             }
-            input_file = this.files[0];
-        } else if (event.type == 'drop') {
+        } else if (event.type === 'drop') {
             // based on: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop
             event.preventDefault();  // prevent opening the file
+            document.getElementById('file_screen').classList.remove('drag');
             if (event.dataTransfer.items) {
                 // use DataTransferItemList interface to access the file
                 if (event.dataTransfer.items.length > 0) {
                     if (event.dataTransfer.items[0].kind === 'file') {
                         input_file = event.dataTransfer.items[0].getAsFile();
-                        document.getElementById('file_screen').classList.remove('drag');
                     } else {
                         if (debug) {
                             console.log('Dropped a non-file item');
                         }
-                        // change background
+                        event.dataTransfer.items[0].getAsString(content => {
+                            if (content === document.getElementById('file_icon').src) {
+                                document.getElementById('file_icon').style.opacity = 1;
+                            }
+                        });
                     }
                 }
             } else {
@@ -48,10 +52,13 @@
                 }
             }
         }
+        if (input_file === null) {
+            return;
+        }
         document.getElementById('file_output').setAttribute('download', input_file.name);
         Array.from(document.getElementsByClassName('file_name')).forEach(name => {
             name.innerHTML = input_file.name;
-        }, this);
+        });
         input_data = null;
         output_data = null;
         detected_ids['game'] = null;
@@ -71,7 +78,7 @@
     }
 
     function calculateChecksum() {
-        if (input_data == null) {
+        if (input_data === null) {
             return Promise.reject(new Error('No input binary data present!'));
         }
         return new Promise((resolve, reject) => (crypto.subtle.digest('SHA-1', input_data)
@@ -83,7 +90,7 @@
                     console.log('Calculated checksum:', checksum);
                 }
                 let recognized_library = database['libraries']
-                    .filter(library => (library['checksum'].toLowerCase() == checksum));
+                    .filter(library => (library['checksum'].toLowerCase() === checksum));
                 if (recognized_library.length > 0) {
                     detected_ids['library'] = recognized_library[0]['id'];
                     detected_ids['game'] = recognized_library[0]['game_id'];
@@ -102,7 +109,7 @@
 
     function preparePatchChoice() {
         document.getElementById('patch_checkbox_container').innerHTML = '';
-        if (detected_ids['library'] == null) {
+        if (detected_ids['library'] === null) {
             applicable_patches = null;
             throw new Error('No library ID detected!');
         }
@@ -154,7 +161,7 @@
     }
 
     function patchLibrary() {
-        if (input_data == null) {
+        if (input_data === null) {
             if (debug) {
                 console.log('No input binary data present!');
             }
@@ -211,6 +218,14 @@
             document.getElementById('file_screen').addEventListener('dragleave', event => {
                 event.preventDefault();
                 document.getElementById('file_screen').classList.remove('drag');
+            });
+            document.getElementById('file_icon').addEventListener('dragstart', event => {
+                if (event.target.style.opacity === '' || Number(event.target.style.opacity) !== 0) {
+                    event.target.style.opacity = 0;
+                } else {
+                    event.preventDefault();
+                    return false;
+                }
             });
             document.getElementById('patch_button').addEventListener('click', patchLibrary);
             if (debug) {

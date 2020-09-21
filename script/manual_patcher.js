@@ -34,7 +34,7 @@
             library_container.className = 'library_container';
             let game_libraries = database['libraries']
                 .filter(library => library['game_id'] == game['id']);
-            if (Object.keys(game_libraries).length == 0) {
+            if (Object.keys(game_libraries).length === 0) {
                 let missing_notice = document.createElement('p');
                 missing_notice.className = 'missing_notice';
                 missing_notice.innerHTML = _('none');
@@ -53,7 +53,7 @@
                 patch_container.className = 'patch_container';
                 let library_patches = database['patches']
                     .filter(patch => patch['library_id'] == library['id']);
-                if (Object.keys(library_patches).length == 0) {
+                if (Object.keys(library_patches).length === 0) {
                     let missing_notice = document.createElement('p');
                     missing_notice.className = 'missing_notice';
                     missing_notice.innerHTML = _('none');
@@ -72,7 +72,7 @@
                         {type: 'text/plain'}
                     ));
                     let library_name_no_ext = library['name'];
-                    if (library_name_no_ext.indexOf('.') != -1) {
+                    if (library_name_no_ext.indexOf('.') !== -1) {
                         library_name_no_ext = library_name_no_ext.slice(0, library_name_no_ext.lastIndexOf('.'));
                     }
                     patch_title.setAttribute(

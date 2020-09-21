@@ -7,7 +7,7 @@ let localizedStrings = (function() {
             return (new Promise((resolve, reject) => {
                 lang_id = String(lang_id).slice(0, 2);
                 let passthrough = (string => string);
-                if (lang_id == 'en') {
+                if (lang_id === 'en') {
                     console.log(`Language not found: ${lang_id}`);
                     resolve(passthrough);
                 }

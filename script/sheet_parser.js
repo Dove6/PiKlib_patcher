@@ -66,11 +66,11 @@ var sheetParser = (function() {
     };
 
     // checking for duplicates in tables and columns values
-    if ((new Set(Object.values(tables))).size != Object.values(tables).length) {
+    if ((new Set(Object.values(tables))).size !== Object.values(tables).length) {
         throw new Error('Duplicate values in "tables" object!');
     }
     for (let column_name in columns) {
-        if ((new Set(Object.values(columns[column_name]))).size != Object.values(columns[column_name]).length) {
+        if ((new Set(Object.values(columns[column_name]))).size !== Object.values(columns[column_name]).length) {
             throw new Error(`Duplicate values in "columns[${column_name}]" object!`);
         }
     }
