@@ -48,6 +48,9 @@
                 library_title.id = `library${library['id']}`;
                 library_title.className = 'library_title';
                 library_title.innerHTML = library['name'];
+                if (typeof(library['comment']) !== 'undefined') {
+                    library_title.innerHTML += ` (${library['comment']})`;
+                }
                 let patch_container = document.createElement('div');
                 patch_container.id = `library${library['id']}_patches`;
                 patch_container.className = 'patch_container';
@@ -98,10 +101,9 @@
     /*
     * MAIN BODY
     */
-    _ = await localizedStrings.generateLocalizationFunction(
-        navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage)
-    );
-    sheetParser.loadSheets()
+    let language = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+    _ = await localizedStrings.generateLocalizationFunction(language);
+    sheetParser.loadSheets(language)
         .then(database => {
             if (debug) {
                 console.log('Sheet parsing promise status: resolved!');

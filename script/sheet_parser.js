@@ -11,7 +11,8 @@ var sheetParser = (function() {
         'games': '1',
         'libraries': '2',
         'patches': '3',
-        'incompatibility': '4'
+        'incompatibility': '4',
+        'localization': '5'
     };
 
     function createRow(grid_name) {
@@ -49,6 +50,13 @@ var sheetParser = (function() {
                     'patch_id2': '3',
                     'comment': '4'
                 };
+            case 'localization':
+                return {
+                    'id': '1',
+                    'key': '2',
+                    'lang': '3',
+                    'content': '4'
+                };
             default: {
                 if (debug) {
                     console.log(`Incorrect grid name: "${grid_name}"`);
@@ -57,12 +65,13 @@ var sheetParser = (function() {
         }
     }
 
-    // mapping of column names to colulmn IDs in grids
+    // mapping of column names to column IDs in grids
     const columns = {
         'games': createRow('games'),
         'libraries': createRow('libraries'),
         'patches': createRow('patches'),
-        'incompatibility': createRow('incompatibility')
+        'incompatibility': createRow('incompatibility'),
+        'localization': createRow('localization')
     };
 
     // checking for duplicates in tables and columns values
@@ -79,7 +88,10 @@ var sheetParser = (function() {
     /*
     * FUNCTIONS
     */
-    function loadGrid(grid_name) {
+    function loadGrid(grid_name, localizer = null) {
+        if (localizer == null) {
+            localizer = (string => string);
+        }
         let grid_id = Number(tables[grid_name]);
         return new Promise((resolve, reject) => {
             fetch(`https://spreadsheets.google.com/feeds/cells/${sheet_id}/${grid_id}/public/full?alt=json`)
@@ -99,7 +111,12 @@ var sheetParser = (function() {
                             if (!rows_map.has(entry['gs$cell']['row'])) {
                                 rows_map.set(entry['gs$cell']['row'], new Map());
                             }
-                            rows_map.get(entry['gs$cell']['row']).set(entry['gs$cell']['col'], entry['gs$cell']['$t']);
+                            if (localizer != null && entry['gs$cell']['$t'][0] == '?') {
+                                // get a string corresponding to the key if both the present
+                                rows_map.get(entry['gs$cell']['row']).set(entry['gs$cell']['col'], localizer(entry['gs$cell']['$t']));
+                            } else {
+                                rows_map.get(entry['gs$cell']['row']).set(entry['gs$cell']['col'], entry['gs$cell']['$t']);
+                            }
                         }
                     });
                     if (debug) {
@@ -123,12 +140,48 @@ var sheetParser = (function() {
         });
     }
 
+    function transformLocalization(localization_grid) {
+        let result = {};
+        for (let row_no in localization_grid) {
+            let row = localization_grid[row_no];
+            if (Object.keys(result).indexOf(row['key']) === -1) {
+                result[row['key']] = {};
+            }
+            result[row['key']][row['lang']] = row['content'];
+        }
+        return result;
+    }
+
     return {
-        loadSheets: function() {
+        loadSheets: async function(lang_id) {
+            lang_id = String(lang_id).slice(0, 2);
+            let localization = transformLocalization(await loadGrid('localization'));
+            let localizer = (string => {
+                string = string.slice(1);
+                if (Object.keys(localization).indexOf(string) > -1) {
+                    if (Object.keys(localization[string]).indexOf(lang_id) > -1) {
+                        return localization[string][lang_id];
+                    } else if (Object.keys(localization[string]).indexOf('en') > -1) {
+                        console.log(`Falling back to the English localization of: ${string}`);
+                        return localization[string]['en'];
+                    } else {
+                        let first_served = Object.keys(localization[string])[0];
+                        console.log(`Falling back to the ${first_served} localization of: ${string}`);
+                        return localization[string][first_served];
+                    }
+                } else {
+                    if (debug) {
+                        console.log(`Translation not found: ${string}`);
+                    }
+                    return string;
+                }
+            });
             let promises_array = new Array();
 
             for (let grid_name in tables) {
-                promises_array[Number(tables[grid_name])] = loadGrid(grid_name);
+                if (grid_name !== 'localization') {
+                    promises_array[Number(tables[grid_name])] = loadGrid(grid_name, localizer);
+                }
             }
             if (debug) {
                 console.log({promises_array});

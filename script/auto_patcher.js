@@ -115,8 +115,12 @@
         }
         document.getElementById('game_name').innerHTML = database['games']
             .find(game => game['id'] == detected_ids['game'])['name'];
-        document.getElementById('library_name').innerHTML = database['libraries']
-            .find(lib => lib['id'] == detected_ids['library'])['name'];
+        let library_version = database['libraries'].find(lib => lib['id'] == detected_ids['library'])['comment'];
+        if (typeof(library_version) !== 'undefined') {
+            document.getElementById('library_version').innerHTML = `(${library_version})`;
+        } else {
+            document.getElementById('library_version').innerHTML = '';
+        }
         applicable_patches = database['patches']
             .filter(patch => ((patch['library_id'] == detected_ids['library']) && (patch['is_valid'].toLowerCase() == 'true')));
         if (debug) {
@@ -200,10 +204,9 @@
     /*
     * MAIN BODY
     */
-    _ = await localizedStrings.generateLocalizationFunction(
-        navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage)
-    );
-    sheetParser.loadSheets()
+    let language = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+    _ = await localizedStrings.generateLocalizationFunction(language);
+    sheetParser.loadSheets(language)
         .then(loaded_db => {
             database = loaded_db;
             document.getElementById('file_input').addEventListener('change', processInputFile);
