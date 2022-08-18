@@ -1,0 +1,37 @@
+name: Update Pages
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Update gh-pages and push changes
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git checkout gh-pages
+          git checkout master .
+          git commit -am "Update files" && git push || echo "No changes to commit"
+
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.WORKFLOW_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'Dove6',
+              repo: 'Dove6.github.io',
+              workflow_id: 'submodules.yml',
+              ref: 'master'
+            })
