@@ -39,6 +39,12 @@ var sheetParser = (function () {
                 'name': 'Reksio i Kretes w Akcji!',
                 'acronym': 'RiKwA',
                 'comment': ''
+            },
+            {
+                'id': '7',
+                'name': 'Wesołe Przedszkole Reksia',
+                'acronym': 'WPR',
+                'comment': ''
             }
         ],
         'libraries': [
@@ -167,6 +173,13 @@ var sheetParser = (function () {
                 'checksum': '5F6CBB33576D4F5493F141DDEE70CD108EA0F9D5',
                 'comment': '?lib_riu_rims_ver',
                 'game_id': '2'
+            },
+            {
+                'id': '19',
+                'name': 'PIKLIB8.dll',
+                'checksum': '33CFD6523C0445F549E989739C58E8AA10329A87',
+                'comment': '',
+                'game_id': '7'
             }
         ],
         'patches': [
@@ -539,6 +552,16 @@ var sheetParser = (function () {
                 'data': '00000180: 00  .\n00000181: 00  .\n00000182: 00  .\n000001c1: 00  .\n000001c2: 00  .\n000001c5: 00  .\n0000dd9e: 2e  .\n0000ddad: 66  f\n0000ddae: 90  .\n0000ddc6: eb  .\n0000ddee: 66  f\n0000ddef: 90  .\n00022666: cc  .\n00022667: 6b  k\n000c6af9: cc  .\n000c6afa: 6b  k\n00146454: 2e  .\n00146455: 5c  \\\n00146456: 00  .\n00146bcc: 78  x\n00146bcd: 3a  :\n00146bce: 5c  \\',
                 'comment': '',
                 'library_id': '18'
+            },
+            {
+                'id': '38',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': '96385469920157D1929786685C036AAF4A55CDA0',
+                'is_valid': 'true',
+                'data': '0000dcdf: e9  .\n0000dce0: 58  X\n0000dce1: 01  .\n0000dce2: 00  .\n0000dce3: 00  .\n0000de4c: 66  f\n0000de4d: 0f  .\n0000de4e: 1f  .\n0000de4f: 44  D\n0000de50: 00  .\n0000de51: 00  .\n0000de56: 0f  .\n0000de57: 1f  .\n0000de58: 40  @\n0000de59: 00  .\n0000de5b: b3  .\n0000de5c: 01  .',
+                'comment': '',
+                'library_id': '19'
             }
         ],
         'incompatibility': [
