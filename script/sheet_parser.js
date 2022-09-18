@@ -160,6 +160,13 @@ var sheetParser = (function () {
                 'checksum': '985DDCACC8AA8949118DF6D9703BB58CBDD21BBD',
                 'comment': '?lib_AM_published',
                 'game_id': '6'
+            },
+            {
+                'id': '18',
+                'name': 'PIKLIB8.dll',
+                'checksum': '5F6CBB33576D4F5493F141DDEE70CD108EA0F9D5',
+                'comment': '?lib_riu_rims_ver',
+                'game_id': '2'
             }
         ],
         'patches': [
@@ -522,6 +529,16 @@ var sheetParser = (function () {
                 'data': '00000160: 00  .\n00000161: 00  .\n00000162: 00  .\n000001a1: 00  .\n000001a2: 00  .\n000001a4: 00  .\n000001a5: 00  .\n00102d40: ff  .\n00102d41: 15  .\n00102d42: c4  .\n00102d43: ea  .\n00102d44: 53  S\n00102d45: 10  .\n00102d46: 8b  .\n00102d47: 44  D\n00102d48: 24  $\n00102d49: 10  .\n00102d4a: 50  P\n00102d4b: eb  .\n00102d4c: 0b  .\n00102d55: eb  .\n00102d56: e9  .\n00102d57: cc  .\n00102d58: ff  .\n00102d59: 15  .\n00102d5a: 44  D\n00102d5b: ec  .\n00102d5c: 53  S\n00102d5d: 10  .\n00102d5e: 59  Y\n00102d5f: c3  .',
                 'comment': '',
                 'library_id': '17'
+            },
+            {
+                'id': '37',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': '3B2340AFFE0E3E5F10533932AC5D5E337576A0F8',
+                'is_valid': 'true',
+                'data': '00000180: 00  .\n00000181: 00  .\n00000182: 00  .\n000001c1: 00  .\n000001c2: 00  .\n000001c5: 00  .\n0000dd9e: 2e  .\n0000ddad: 66  f\n0000ddae: 90  .\n0000ddc6: eb  .\n0000ddee: 66  f\n0000ddef: 90  .\n00022666: cc  .\n00022667: 6b  k\n000c6af9: cc  .\n000c6afa: 6b  k\n00146454: 2e  .\n00146455: 5c  \\\n00146456: 00  .\n00146bcc: 78  x\n00146bcd: 3a  :\n00146bce: 5c  \\',
+                'comment': '',
+                'library_id': '18'
             }
         ],
         'incompatibility': [
@@ -688,6 +705,18 @@ var sheetParser = (function () {
                 'key': 'lib_AM_published',
                 'lang': 'pl',
                 'content': 'seria Rodzinna Gra Przygodowa'
+            },
+            {
+                'id': '27',
+                'key': 'lib_riu_rims_ver',
+                'lang': 'pl',
+                'content': 'seria 2 GRY!, w pakiecie z Miastem SeKretów'
+            },
+            {
+                'id': '28',
+                'key': 'lib_riu_rims_ver',
+                'lang': 'en',
+                'content': '2 GRY! series, bundled with City of Secrets'
             }
         ]
     };
