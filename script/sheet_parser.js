@@ -180,6 +180,13 @@ var sheetParser = (function () {
                 'checksum': '33CFD6523C0445F549E989739C58E8AA10329A87',
                 'comment': '',
                 'game_id': '7'
+            },
+            {
+                'id': '20',
+                'name': 'PIKLIB8.dll',
+                'checksum': 'C5B899F8FA93620A902DA117849289A542E3AF3E',
+                'comment': '?lib_rom_ver',
+                'game_id': '2'
             }
         ],
         'patches': [
@@ -562,6 +569,16 @@ var sheetParser = (function () {
                 'data': '0000dcdf: e9  .\n0000dce0: 58  X\n0000dce1: 01  .\n0000dce2: 00  .\n0000dce3: 00  .\n0000de4c: 66  f\n0000de4d: 0f  .\n0000de4e: 1f  .\n0000de4f: 44  D\n0000de50: 00  .\n0000de51: 00  .\n0000de56: 0f  .\n0000de57: 1f  .\n0000de58: 40  @\n0000de59: 00  .\n0000de5b: b3  .\n0000de5c: 01  .',
                 'comment': '',
                 'library_id': '19'
+            },
+            {
+                'id': '39',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': '452A029494A2BE787EE0A56A811D03358C5B8459',
+                'is_valid': 'true',
+                'data': '000101ce: 25  %\n000101dd: 66  f\n000101de: 90  .\n000101f6: eb  .\n0001021e: 66  f\n0001021f: 90  .',
+                'comment': 'Prepared by Merciful Monarch',
+                'library_id': '20'
             }
         ],
         'incompatibility': [
@@ -740,6 +757,18 @@ var sheetParser = (function () {
                 'key': 'lib_riu_rims_ver',
                 'lang': 'en',
                 'content': '2 GRY! series, bundled with City of Secrets'
+            },
+            {
+                'id': '29',
+                'key': 'lib_rom_ver',
+                'lang': 'pl',
+                'content': 'rumuńska wersja językowa'
+            },
+            {
+                'id': '30',
+                'key': 'lib_rom_ver',
+                'lang': 'en',
+                'content': 'Romanian localization'
             }
         ]
     };
