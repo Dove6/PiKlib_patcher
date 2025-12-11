@@ -45,6 +45,54 @@ var sheetParser = (function () {
                 'name': 'Wesołe Przedszkole Reksia',
                 'acronym': 'WPR',
                 'comment': ''
+            },
+            {
+                'id': '8',
+                'name': 'ABC z Reksiem',
+                'acronym': 'ABCzR',
+                'comment': ''
+            },
+            {
+                'id': '9',
+                'name': 'Kopciuszek',
+                'acronym': 'Kc',
+                'comment': ''
+            },
+            {
+                'id': '10',
+                'name': 'Księga Dżungli',
+                'acronym': 'KD',
+                'comment': ''
+            },
+            {
+                'id': '11',
+                'name': 'Piotruś Pan',
+                'acronym': 'PP',
+                'comment': ''
+            },
+            {
+                'id': '12',
+                'name': 'Robin Hood',
+                'acronym': 'RH',
+                'comment': ''
+            },
+            {
+                'id': '13',
+                'name': 'Smokule - Język Angielski',
+                'acronym': 'SJA',
+                'comment': ''
+            },
+            {
+                'id': '14',
+                'name': 'Wielki Turniej Wiedzy o Sporcie',
+                'acronym': 'WTWoS',
+                'comment': ''
+            },
+            {
+                'id': '15',
+                'name': 'Zamek 1000 Pytań',
+                'acronym': 'Z1000P',
+                'comment': ''
             }
         ],
         'libraries': [
@@ -187,6 +235,76 @@ var sheetParser = (function () {
                 'checksum': 'C5B899F8FA93620A902DA117849289A542E3AF3E',
                 'comment': '?lib_rom_ver',
                 'game_id': '2'
+            },
+            {
+                'id': '21',
+                'name': 'PIKLIB41.dll',
+                'checksum': '0CF39B1927934954E02FFAD9444F6B5E1AF11A95',
+                'comment': '2009',
+                'game_id': '8'
+            },
+            {
+                'id': '22',
+                'name': 'BlooMooDLL.dll',
+                'checksum': '4EB825248B908062DF1E4250861C2B9FF29A35FB',
+                'comment': 'oryginał',
+                'game_id': '9'
+            },
+            {
+                'id': '23',
+                'name': 'PIKLIB8.dll',
+                'checksum': '96A2E507476FC9FE3532F9B04CB735BD6EB41847',
+                'comment': '',
+                'game_id': '10'
+            },
+            {
+                'id': '24',
+                'name': 'PIKLIB8.dll',
+                'checksum': 'C6E4D51EF8105C3480703E0FFF48F2D27E1C0599',
+                'comment': 'Wersja z KŚ Gry dla dzieci',
+                'game_id': '11'
+            },
+            {
+                'id': '25',
+                'name': 'PIKLIB8.dll',
+                'checksum': '5F169305D8B048EBB7E9615F2147E41FAAB323C5',
+                'comment': 'oryginał',
+                'game_id': '12'
+            },
+            {
+                'id': '26',
+                'name': 'PIKLIB60.dll',
+                'checksum': '383997AF2344C3B0F8DBD0636F558C4A476F6831',
+                'comment': 'Wersja z KŚ Gry dla dzieci',
+                'game_id': '13'
+            },
+            {
+                'id': '27',
+                'name': 'PIKLIB8.dll',
+                'checksum': '8C905EF367364D9C0805FCB85AA12594DEB0A833',
+                'comment': 'Wersja z KŚ Gry dla dzieci',
+                'game_id': '7'
+            },
+            {
+                'id': '28',
+                'name': 'PIKLIB42.dll',
+                'checksum': '99EDB90CD1092C2A9D8A3F5AB317792881A84707',
+                'comment': 'Wersja z KŚ Gry dla dzieci',
+                'game_id': '14'
+            },
+            {
+                'id': '29',
+                'name': 'PIKLIB42.dll',
+                'checksum': '71B084F341F1C09490FF04CF1A912C541EABC2F9',
+                'comment': 'wersja pudełkowa',
+                'game_id': '15'
+            },
+            {
+                'id': '30',
+                'name': 'PIKLIB42.dll',
+                'checksum': 'B4C8A66A3A7A28B61A921A1EB4F1873C2164E921',
+                'comment': 'Wersja z KŚ Gry dla dzieci',
+                'game_id': '15'
             }
         ],
         'patches': [
@@ -579,7 +697,108 @@ var sheetParser = (function () {
                 'data': '000101ce: 25  %\n000101dd: 66  f\n000101de: 90  .\n000101f6: eb  .\n0001021e: 66  f\n0001021f: 90  .',
                 'comment': 'Prepared by Merciful Monarch',
                 'library_id': '20'
-            }
+            },
+            {
+                'id': '40',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'C852729222DE38F3B461AB424F3B5F4C0AA26D8A',
+                'is_valid': 'true',
+                'data': '0000aefd: 2e  .\n0000af0c: 66  f\n0000af0d: 90  .\n0000af31: eb  .\n000500cc: 2e  .\n000500cd: 5c  \\\n000500ce: 00  .',
+                'comment': '',
+                'library_id': '21'
+            },
+            {
+                'id': '41',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'D72589C679C3C1ECE4530A101B0097725F3564B2',
+                'is_valid': 'true',
+                'data': '0000dd0e: 2e  .\n0000dd1d: 66  f\n0000dd1e: 90  .\n0000dd36: eb  .\n00174110: 2e  .\n00174111: 5c  \\\n00174112: 00  .',
+                'comment': '',
+                'library_id': '22'
+            },
+            {
+                'id': '42',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'F8F78FECA4F7BE110E7C4CDE08AE0544830D546D',
+                'is_valid': 'true',
+                'data': '0000ddce: 2e  .\n0000dddd: 66  f\n0000ddde: 90  .\n0000ddf6: eb  .\n00146458: 2e  .\n00146459: 5c  \\\n0014645a: 00  .',
+                'comment': '',
+                'library_id': '23'
+            },
+            {
+                'id': '43',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'DDEA91B6E8272835588347CF4DE8F11BEF67B77B',
+                'is_valid': 'true',
+                'data': '0000ddce: 2e  .\n0000dddd: 66  f\n0000ddde: 90  .\n0000ddf6: eb  .\n00146458: 2e  .\n00146459: 5c  \\\n0014645a: 00  .',
+                'comment': '',
+                'library_id': '24'
+            },
+            {
+                'id': '44',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': '6853F71F266477B0F294AC8FF21FED157E3ABAF1',
+                'is_valid': 'true',
+                'data': '0000ddce: 2e  .\n0000dddd: 66  f\n0000ddde: 90  .\n0000ddf6: eb  .\n00146458: 2e  .\n00146459: 5c  \\\n0014645a: 00  .',
+                'comment': '',
+                'library_id': '25'
+            },
+
+            {
+                'id': '45',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'BA577F81B6195B3999B50C6815134F6933625870',
+                'is_valid': 'true',
+                'data': '0000ee1d: 2e  .\n0000ee2c: 66  f\n0000ee2d: 90  .\n0000ee51: eb  .\n0008415c: 2e  .\n0008415d: 5c  \\\n0008415e: 00  .',
+                'comment': '',
+                'library_id': '26'
+            },
+            {
+                'id': '46',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': '768D7F37A74BCCD04C13AA7BDCB1610017D4FB2D',
+                'is_valid': 'true',
+                'data': '0000ddce: 2e  .\n0000dddd: 66  f\n0000ddde: 90  .\n0000ddf6: eb  .\n00146458: 2e  .\n00146459: 5c  \\\n0014645a: 00 .',
+                'comment': '',
+                'library_id': '27'
+            },
+            {
+                'id': '47',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'F9C4ADC8E076B466E5D6D173B7031C16C2CCFDCE',
+                'is_valid': 'true',
+                'data': '0000b77d: 2e  .\n0000b78c: 66  f\n0000b78d: 90  .\n0000b7b1: eb  .\n000570bc: 2e  .\n000570bd: 5c  \\\n000570be: 00  .',
+                'comment': '',
+                'library_id': '28'
+            },
+            {
+                'id': '48',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'E9D3E6BAC1DC4B2ACD5A12612D95AD0547BF37C1',
+                'is_valid': 'true',
+                'data': '0000b69d: 2e  .\n0000b6ac: 66  f\n0000b6ad: 90  .\n0000b6d1: eb  .\n000570cc: 2e  .\n000570cd: 5c  \\\n000570ce: 00  .',
+                'comment': '',
+                'library_id': '29'
+            },
+            {
+                'id': '49',
+                'name': 'no-CD',
+                'description': '?pat_no_CD_desc',
+                'modified_checksum': 'AC802F9278523661C2452CC6532B6AE7398337F9',
+                'is_valid': 'true',
+                'data': '0000b69d: 2e  .\n0000b6ac: 66  f\n0000b6ad: 90  .\n0000b6d1: eb  .\n000570cc: 2e  .\n000570cd: 5c  \\\n000570ce: 00  /',
+                'comment': '',
+                'library_id': '30'
+            },
         ],
         'incompatibility': [
             {
