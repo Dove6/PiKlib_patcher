@@ -314,7 +314,7 @@ var sheetParser = (function () {
                 'description': '?pat_no_CD_desc',
                 'modified_checksum': 'DEE4E20D67C0BC73E6089769254D3FF039CA20E7',
                 'is_valid': 'true',
-                'data': '0000b6ad: 2e  .\n0000b6bc: 66  f\n0000b6bd: 90  .\n0000b6e1: eb  .\n000a1140: 2e  .\n000a1141: 5c  \\\n000a1142: 00  .\n',
+                'data': '0000b6ad: 2e  .\n0000b6bc: 66  f\n0000b6bd: 90  .\n0000b6e1: eb  .\n000a1140: 2e  .\n000a1141: 5c  \\\n000a1142: 00  .',
                 'comment': '',
                 'library_id': '1'
             },
@@ -324,7 +324,7 @@ var sheetParser = (function () {
                 'description': '?pat_log_file_desc',
                 'modified_checksum': '6A300B2A0985B4C09DBCFF28FF94BE1E0FFF4EEA',
                 'is_valid': 'false',
-                'data': '00046db0: 31  1\n00046db1: c0  .\n00046db2: b0  .\n00046db3: 01  .\n',
+                'data': '00046db0: 31  1\n00046db1: c0  .\n00046db2: b0  .\n00046db3: 01  .',
                 'comment': '?pat_only_CXObject_log_com',
                 'library_id': '1'
             },
@@ -334,7 +334,7 @@ var sheetParser = (function () {
                 'description': '?pat_log_file_desc',
                 'modified_checksum': '9B33DF25C316FE927D3293A83AC4EF490E069CA7',
                 'is_valid': 'true',
-                'data': '00063a03: 66  f\n00063a04: 90  .\n',
+                'data': '00063a03: 66  f\n00063a04: 90  .',
                 'comment': 'CWindow::toLog',
                 'library_id': '1'
             },
@@ -344,7 +344,7 @@ var sheetParser = (function () {
                 'description': '?pat_no_CD_desc',
                 'modified_checksum': '69298624C0E065711688767DBBCA3CB160941D2F',
                 'is_valid': 'true',
-                'data': '0000bf83: 2e  .\n0000bf92: 66  f\n0000bf93: 90  .\n0000bfab: eb  .\n000f2114: 2e  .\n000f2115: 5c  \\\n000f2116: 00  .\n',
+                'data': '0000bf83: 2e  .\n0000bf92: 66  f\n0000bf93: 90  .\n0000bfab: eb  .\n000f2114: 2e  .\n000f2115: 5c  \\\n000f2116: 00  .',
                 'comment': '',
                 'library_id': '3'
             },
@@ -354,7 +354,7 @@ var sheetParser = (function () {
                 'description': '?pat_log_file_desc',
                 'modified_checksum': '30EC0394BCED6A2F27FF54B57E98890F4EE83E56',
                 'is_valid': 'true',
-                'data': '000a5a36: 66  f\n000a5a37: 0f  .\n000a5a38: 1f  .\n000a5a39: 44  D\n',
+                'data': '000a5a36: 66  f\n000a5a37: 0f  .\n000a5a38: 1f  .\n000a5a39: 44  D',
                 'comment': 'CWindow::toLog',
                 'library_id': '3'
             },
@@ -364,7 +364,7 @@ var sheetParser = (function () {
                 'description': '?pat_no_CD_desc',
                 'modified_checksum': '2CA380A515673D316B03F5625F2DE2B9BD017C1C',
                 'is_valid': 'true',
-                'data': '0000dd9e: 2e  .\n0000ddad: 66  f\n0000ddae: 90  .\n0000ddc6: eb  .\n0000ddee: 66  f\n0000ddef: 90  .\n00022666: cc  .\n00022667: 6b  k\n000c6af9: cc  .\n000c6afa: 6b  k\n00146454: 2e  .\n00146455: 5c  \\\n00146456: 00  .\n00146bcc: 78  x\n00146bcd: 3a  :\n00146bce: 5c  \\\n',
+                'data': '0000dd9e: 2e  .\n0000ddad: 66  f\n0000ddae: 90  .\n0000ddc6: eb  .\n0000ddee: 66  f\n0000ddef: 90  .\n00022666: cc  .\n00022667: 6b  k\n000c6af9: cc  .\n000c6afa: 6b  k\n00146454: 2e  .\n00146455: 5c  \\\n00146456: 00  .\n00146bcc: 78  x\n00146bcd: 3a  :\n00146bce: 5c  \\',
                 'comment': '',
                 'library_id': '4'
             },
@@ -374,7 +374,7 @@ var sheetParser = (function () {
                 'description': '?pat_no_CD_desc',
                 'modified_checksum': '7831CD31E322EBAF1621A03F080F3AC506DBE6E4',
                 'is_valid': 'false',
-                'data': '0000ddee: 2e  .\n0000ddfd: 66  f\n0000ddfe: 90  .\n0000de16: eb  .\n0000de3e: 66  f\n0000de3f: 90  .\n00108394: 2e  .\n00108395: 5c  \\\n00108396: 00  .\n',
+                'data': '0000ddee: 2e  .\n0000ddfd: 66  f\n0000ddfe: 90  .\n0000de16: eb  .\n0000de3e: 66  f\n0000de3f: 90  .\n00108394: 2e  .\n00108395: 5c  \\\n00108396: 00  .',
                 'comment': '',
                 'library_id': '5'
             },
@@ -384,7 +384,7 @@ var sheetParser = (function () {
                 'description': '?pat_dbg_out_desc',
                 'modified_checksum': '46B80EA2F29CFEBF63991259413A60A5329275BD',
                 'is_valid': 'true',
-                'data': '000e2080: eb  .\n000e2081: 21  !\n000e2082: 8b  .\n000e2083: 44  D\n000e2084: 24  $\n000e2085: 10  .\n000e2086: 50  P\n000e2087: ff  .\n000e2088: 15  .\n000e2089: 80  .\n000e208a: 71  q\n000e208b: 10  .\n000e208c: 10  .\n000e208d: 59  Y\n000e208e: c3  .\n000e20a3: 8b  .\n000e20a4: 44  D\n000e20a5: 24  $\n000e20a6: 10  .\n000e20a7: 50  P\n000e20a8: ff  .\n000e20a9: 15  .\n000e20aa: b8  .\n000e20ab: 70  p\n000e20ac: 10  .\n000e20ad: 10  .\n000e20ae: eb  .\n000e20af: d2  .\n',
+                'data': '000e2080: eb  .\n000e2081: 21  !\n000e2082: 8b  .\n000e2083: 44  D\n000e2084: 24  $\n000e2085: 10  .\n000e2086: 50  P\n000e2087: ff  .\n000e2088: 15  .\n000e2089: 80  .\n000e208a: 71  q\n000e208b: 10  .\n000e208c: 10  .\n000e208d: 59  Y\n000e208e: c3  .\n000e20a3: 8b  .\n000e20a4: 44  D\n000e20a5: 24  $\n000e20a6: 10  .\n000e20a7: 50  P\n000e20a8: ff  .\n000e20a9: 15  .\n000e20aa: b8  .\n000e20ab: 70  p\n000e20ac: 10  .\n000e20ad: 10  .\n000e20ae: eb  .\n000e20af: d2  .',
                 'comment': '',
                 'library_id': '5'
             },
@@ -394,7 +394,7 @@ var sheetParser = (function () {
                 'description': '?pat_no_CD_desc',
                 'modified_checksum': '8FE5F1834E3A21C6C49C745C3967BE0BE4C48521',
                 'is_valid': 'true',
-                'data': '0000ddee: 2e  .\n0000ddfd: 66  f\n0000ddfe: 90  .\n0000de16: eb  .\n0000de3e: 66  f\n0000de3f: 90  .\n000c1399: dc  .\n000c139a: 8a  .\n00108394: 2e  .\n00108395: 5c  \\\n00108396: 00  .\n00108adc: 78  x\n00108add: 3a  :\n00108ade: 5c  \\\n',
+                'data': '0000ddee: 2e  .\n0000ddfd: 66  f\n0000ddfe: 90  .\n0000de16: eb  .\n0000de3e: 66  f\n0000de3f: 90  .\n000c1399: dc  .\n000c139a: 8a  .\n00108394: 2e  .\n00108395: 5c  \\\n00108396: 00  .\n00108adc: 78  x\n00108add: 3a  :\n00108ade: 5c  \\',
                 'comment': '?pat_fixed_ver1_com',
                 'library_id': '5'
             },
@@ -404,7 +404,7 @@ var sheetParser = (function () {
                 'description': '?pat_no_CD_desc',
                 'modified_checksum': '8140D874C13137A00369E816E88DB923FC1A6337',
                 'is_valid': 'true',
-                'data': '000170fc: 2e  .\n000170fd: 5c  \\\n000170fe: 00  .\n00017185: 2e  .\n00017194: 66  f\n00017195: 90  .\n000171ad: eb  .\n000171d5: 66  f\n000171d6: 90  .\n001930e8: 2e  .\n001930e9: 5c  \\\n001930ea: 00  .\n',
+                'data': '000170fc: 2e  .\n000170fd: 5c  \\\n000170fe: 00  .\n00017185: 2e  .\n00017194: 66  f\n00017195: 90  .\n000171ad: eb  .\n000171d5: 66  f\n000171d6: 90  .\n001930e8: 2e  .\n001930e9: 5c  \\\n001930ea: 00  .',
                 'comment': '',
                 'library_id': '7'
             },
@@ -414,7 +414,7 @@ var sheetParser = (function () {
                 'description': '?pat_dbg_out_desc',
                 'modified_checksum': 'A38B19B5A56E735A681806FF79EC81F49AF8E9DB',
                 'is_valid': 'true',
-                'data': '001024d0: eb  .\n001024d1: 16  .\n001024d2: 8b  .\n001024d3: 44  D\n001024d4: 24  $\n001024d5: 10  .\n001024d6: 50  P\n001024d7: ff  .\n001024d8: 15  .\n001024d9: 3c  <\n001024da: 0c  .\n001024db: 54  T\n001024dc: 10  .\n001024dd: 59  Y\n001024de: c3  .\n001024e8: 8b  .\n001024e9: 44  D\n001024ea: 24  $\n001024eb: 10  .\n001024ec: 50  P\n001024ed: eb  .\n001024ee: 09  .\n001024f8: ff  .\n001024f9: 15  .\n001024fa: b8  .\n001024fb: 0a  .\n001024fc: 54  T\n001024fd: 10  .\n001024fe: eb  .\n001024ff: d2  .\n',
+                'data': '001024d0: eb  .\n001024d1: 16  .\n001024d2: 8b  .\n001024d3: 44  D\n001024d4: 24  $\n001024d5: 10  .\n001024d6: 50  P\n001024d7: ff  .\n001024d8: 15  .\n001024d9: 3c  <\n001024da: 0c  .\n001024db: 54  T\n001024dc: 10  .\n001024dd: 59  Y\n001024de: c3  .\n001024e8: 8b  .\n001024e9: 44  D\n001024ea: 24  $\n001024eb: 10  .\n001024ec: 50  P\n001024ed: eb  .\n001024ee: 09  .\n001024f8: ff  .\n001024f9: 15  .\n001024fa: b8  .\n001024fb: 0a  .\n001024fc: 54  T\n001024fd: 10  .\n001024fe: eb  .\n001024ff: d2  .',
                 'comment': '',
                 'library_id': '7'
             },
@@ -799,6 +799,66 @@ var sheetParser = (function () {
                 'comment': '',
                 'library_id': '30'
             },
+            {
+                'id': '50',
+                'name': 'RANDOM sign/range fix',
+                'description': '?random_sign_fix_desc',
+                'modified_checksum': 'C6834B12DB0DC9BA4C9598B149507727B0BFA6CE',
+                'is_valid': 'true',
+                'data': '000cb6d2: 0f  .\n000cb6d3: 31  1\n000cb6d4: d1  .\n000cb6d5: e8  .\n000cb6d6: 31  1\n000cb6d7: d2  .\n000cb701: 0f  .\n000cb702: 31  1\n000cb703: d1  .\n000cb704: e8  .\n000cb705: 31  1\n000cb706: d2  .\n000cb74b: 0f  .\n000cb74c: 31  1\n000cb74d: d1  .\n000cb74e: e8  .\n000cb74f: 31  1\n000cb750: d2  .',
+                'comment': 'Prepared by lde',
+                'library_id': '4'
+            },
+            {
+                'id': '51',
+                'name': 'RANDOM sign/range fix',
+                'description': '?random_sign_fix_desc',
+                'modified_checksum': '63E9C7DCFEEDF2455C6836BF1EF5530B78C2EA74',
+                'is_valid': 'true',
+                'data': '000cb6d2: 0f  .\n000cb6d3: 31  1\n000cb6d4: d1  .\n000cb6d5: e8  .\n000cb6d6: 31  1\n000cb6d7: d2  .\n000cb701: 0f  .\n000cb702: 31  1\n000cb703: d1  .\n000cb704: e8  .\n000cb705: 31  1\n000cb706: d2  .\n000cb74b: 0f  .\n000cb74c: 31  1\n000cb74d: d1  .\n000cb74e: e8  .\n000cb74f: 31  1\n000cb750: d2  .',
+                'comment': '',
+                'library_id': '2'
+            },
+            {
+                'id': '52',
+                'name': 'RANDOM sign/range fix',
+                'description': '?random_sign_fix_desc',
+                'modified_checksum': 'A53E66BCFC318F9F90FCE1CDD2A27F0AFEB4BE68',
+                'is_valid': 'true',
+                'data': '000c6072: 0f  .\n000c6073: 31  1\n000c6074: d1  .\n000c6075: e8  .\n000c6076: 31  1\n000c6077: d2  .\n000c60a1: 0f  .\n000c60a2: 31  1\n000c60a3: d1  .\n000c60a4: e8  .\n000c60a5: 31  1\n000c60a6: d2  .\n000c60eb: 0f  .\n000c60ec: 31  1\n000c60ed: d1  .\n000c60ee: e8  .\n000c60ef: 31  1\n000c60e0: d2  .',
+                'comment': '',
+                'library_id': '5'
+            },
+            {
+                'id': '53',
+                'name': 'RANDOM sign/range fix',
+                'description': '?random_sign_fix_desc',
+                'modified_checksum': '6C697313FA19F623630A9225CE84552650C28F96',
+                'is_valid': 'true',
+                'data': '000cf062: 0f  .\n000cf063: 31  1\n000cf064: d1  .\n000cf065: e8  .\n000cf066: 31  1\n000cf067: d2  .\n000cf091: 0f  .\n000cf092: 31  1\n000cf093: d1  .\n000cf094: e8  .\n000cf095: 31  1\n000cf096: d2  .',
+                'comment': '',
+                'library_id': '6'
+            },
+            {
+                'id': '54',
+                'name': 'RANDOM sign/range fix',
+                'description': '?random_sign_fix_desc',
+                'modified_checksum': '66501FD5E92372D272E2C043E06111EEDF26B88A',
+                'is_valid': 'true',
+                'data': '000fb4f7: 0f  .\n000fb4f8: 31  1\n000fb4f9: d1  .\n000fb4fa: e8  .\n000fb4fb: 31  1\n000fb4fc: d2  .\n000fb536: 0f  .\n000fb537: 31  1\n000fb538: d1  .\n000fb539: e8  .\n000fb53a: 31  1\n000fb53b: d2  .\n000fb5a7: 0f  .\n000fb5a8: 31  1\n000fb5a9: d1  .\n000fb5aa: e8  .\n000fb5ab: 31  1\n000fb5ac: d2  .',
+                'comment': '',
+                'library_id': '7'
+            },
+            {
+                'id': '55',
+                'name': 'RANDOM sign/range fix',
+                'description': '?random_sign_fix_desc',
+                'modified_checksum': 'AE18A02A257F21C1031800BF0FE21BD90DB8682D',
+                'is_valid': 'true',
+                'data': '000fbd47: 0f  .\n000fbd48: 31  1\n000fbd49: d1  .\n000fbd4a: e8  .\n000fbd4b: 31  1\n000fbd4c: d2  .\n000fbd86: 0f  .\n000fbd87: 31  1\n000fbd88: d1  .\n000fbd89: e8  .\n000fbd8a: 31  1\n000fbd8b: d2  .\n000fbdf7: 0f  .\n000fbdf8: 31  1\n000fbdf9: d1  .\n000fbdfa: e8  .\n000fbdfb: 31  1\n000fbdfc: d2  .',
+                'comment': '',
+                'library_id': '8'
+            },
         ],
         'incompatibility': [
             {
@@ -988,7 +1048,19 @@ var sheetParser = (function () {
                 'key': 'lib_rom_ver',
                 'lang': 'en',
                 'content': 'Romanian localization'
-            }
+            },
+            {
+                'id': '31',
+                'key': 'random_sign_fix_desc',
+                'lang': 'en',
+                'content': 'Fixes RANDOM (game RNG) returning results of an unexpected sign and range'
+            },
+            {
+                'id': '32',
+                'key': 'random_sign_fix_desc',
+                'lang': 'pl',
+                'content': 'Poprawia RANDOM (używany przez grę generator losowy) tak, by zwracał wyniki w oczekiwanym zakresie i z oczekiwanym znakiem'
+            },
         ]
     };
 

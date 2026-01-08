@@ -191,12 +191,17 @@
                     output_editable[e['index']] = e['value'];
                 });
         });
+        crypto.subtle.digest('SHA-1', output_data).then(result => {
+            let checksum = (new Uint8Array(result))
+                .reduce((hex_string, byte) => (hex_string + ('0' + byte.toString(16)).slice(-2)), '')
+                .toLowerCase();
+            if (debug) {
+                console.log(`Patched, resulting checksum: ${checksum}`);
+            }
+        });
         document.getElementById('file_output').href = URL.createObjectURL(
             new Blob([output_data], {type: 'application/x-msdownload'})
         );
-        if (debug) {
-            console.log('Patched!');
-        }
         document.getElementById('file_output').click();
     }
 
