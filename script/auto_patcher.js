@@ -186,9 +186,12 @@
             patch['data'].split('\n')
                 .filter(e => e.length > 0)
                 .map(e => e.match(/([0-9a-fA-F]{8}): ([0-9a-fA-F]{2})/))
-                .map(e => ({'index': parseInt(e[1], 16), 'value': parseInt(e[2], 16)}))
+                .map(e => ({ index: parseInt(e[1], 16), value: parseInt(e[2], 16) }))
                 .forEach(e => {
-                    output_editable[e['index']] = e['value'];
+                    if (e.index >= output_editable.length) {
+                        throw new Error('Provided patch outside the bounds of the file');
+                    }
+                    output_editable[e.index] = e.value;
                 });
         });
         crypto.subtle.digest('SHA-1', output_data).then(result => {
