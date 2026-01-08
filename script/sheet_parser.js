@@ -823,9 +823,9 @@ var sheetParser = (function () {
                 'id': '52',
                 'name': 'RANDOM sign/range fix',
                 'description': '?random_sign_fix_desc',
-                'modified_checksum': 'A53E66BCFC318F9F90FCE1CDD2A27F0AFEB4BE68',
+                'modified_checksum': '9407DC8E0D6C4AD5B2D926DF5FBCE6568E060096',
                 'is_valid': 'true',
-                'data': '000c6072: 0f  .\n000c6073: 31  1\n000c6074: d1  .\n000c6075: e8  .\n000c6076: 31  1\n000c6077: d2  .\n000c60a1: 0f  .\n000c60a2: 31  1\n000c60a3: d1  .\n000c60a4: e8  .\n000c60a5: 31  1\n000c60a6: d2  .\n000c60eb: 0f  .\n000c60ec: 31  1\n000c60ed: d1  .\n000c60ee: e8  .\n000c60ef: 31  1\n000c60e0: d2  .',
+                'data': '000c6072: 0f  .\n000c6073: 31  1\n000c6074: d1  .\n000c6075: e8  .\n000c6076: 31  1\n000c6077: d2  .\n000c60a1: 0f  .\n000c60a2: 31  1\n000c60a3: d1  .\n000c60a4: e8  .\n000c60a5: 31  1\n000c60a6: d2  .\n000c60eb: 0f  .\n000c60ec: 31  1\n000c60ed: d1  .\n000c60ee: e8  .\n000c60ef: 31  1\n000c60f0: d2  .',
                 'comment': '',
                 'library_id': '5'
             },
