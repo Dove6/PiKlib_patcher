@@ -843,9 +843,9 @@ var sheetParser = (function () {
                 'id': '54',
                 'name': 'RANDOM sign/range fix',
                 'description': '?random_sign_fix_desc',
-                'modified_checksum': '66501FD5E92372D272E2C043E06111EEDF26B88A',
+                'modified_checksum': '918DF662137715DCBB174FAD1294837B83CE2DA0',
                 'is_valid': 'true',
-                'data': '000fb4f7: 0f  .\n000fb4f8: 31  1\n000fb4f9: d1  .\n000fb4fa: e8  .\n000fb4fb: 31  1\n000fb4fc: d2  .\n000fb536: 0f  .\n000fb537: 31  1\n000fb538: d1  .\n000fb539: e8  .\n000fb53a: 31  1\n000fb53b: d2  .\n000fb5a7: 0f  .\n000fb5a8: 31  1\n000fb5a9: d1  .\n000fb5aa: e8  .\n000fb5ab: 31  1\n000fb5ac: d2  .',
+                'data': '000fb4f2: 0f  .\n000fb4f3: 1f  .\n000fb4f4: 40  @\n000fb4f5: 00  .\n000fb4f6: 0f  .\n000fb4f7: 31  1\n000fb4f8: d1  .\n000fb4f9: e8  .\n000fb4fa: 31  1\n000fb4fb: d2  .\n000fb531: 0f  .\n000fb532: 1f  .\n000fb533: 40  @\n000fb534: 00  .\n000fb535: 0f  .\n000fb536: 31  1\n000fb537: d1  .\n000fb538: e8  .\n000fb539: 31  1\n000fb53a: d2  .\n000fb5a2: 0f  .\n000fb5a3: 1f  .\n000fb5a4: 40  @\n000fb5a5: 00  .\n000fb5a6: 0f  .\n000fb5a7: 31  1\n000fb5a8: d1  .\n000fb5a9: e8  .\n000fb5aa: 31  1\n000fb5ab: d2  .',
                 'comment': '',
                 'library_id': '7'
             },
@@ -853,9 +853,9 @@ var sheetParser = (function () {
                 'id': '55',
                 'name': 'RANDOM sign/range fix',
                 'description': '?random_sign_fix_desc',
-                'modified_checksum': 'AE18A02A257F21C1031800BF0FE21BD90DB8682D',
+                'modified_checksum': '95D35708CF39B1E413C02329F09C967C75CDB498',
                 'is_valid': 'true',
-                'data': '000fbd47: 0f  .\n000fbd48: 31  1\n000fbd49: d1  .\n000fbd4a: e8  .\n000fbd4b: 31  1\n000fbd4c: d2  .\n000fbd86: 0f  .\n000fbd87: 31  1\n000fbd88: d1  .\n000fbd89: e8  .\n000fbd8a: 31  1\n000fbd8b: d2  .\n000fbdf7: 0f  .\n000fbdf8: 31  1\n000fbdf9: d1  .\n000fbdfa: e8  .\n000fbdfb: 31  1\n000fbdfc: d2  .',
+                'data': '000fbd42: 0f  .\n000fbd43: 1f  .\n000fbd44: 40  @\n000fbd45: 00  .\n000fbd46: 0f  .\n000fbd47: 31  1\n000fbd48: d1  .\n000fbd49: e8  .\n000fbd4a: 31  1\n000fbd4b: d2  .\n000fbd81: 0f  .\n000fbd82: 1f  .\n000fbd83: 40  @\n000fbd84: 00  .\n000fbd85: 0f  .\n000fbd86: 31  1\n000fbd87: d1  .\n000fbd88: e8  .\n000fbd89: 31  1\n000fbd8a: d2  .\n000fbdf2: 0f  .\n000fbdf3: 1f  .\n000fbdf4: 40  @\n000fbdf5: 00  .\n000fbdf6: 0f  .\n000fbdf7: 31  1\n000fbdf8: d1  .\n000fbdf9: e8  .\n000fbdfa: 31  1\n000fbdfb: d2  .',
                 'comment': '',
                 'library_id': '8'
             },
